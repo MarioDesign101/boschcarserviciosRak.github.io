@@ -213,21 +213,19 @@ header .logo {
   width: 40%;
   height: 100%;
   position: relative;
-  top: -10px;
+  top: 30px;
   left: 10px;
 }
 header .logo img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 50px;
-  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  height: 90px;
   margin-bottom: 4px;
 }
 header .logo .logo__title {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
   font-weight: 700;
   font-size: 1rem;
   color: rgb(255, 255, 255);
@@ -525,14 +523,15 @@ footer .copy {
 @media screen and (min-width: 480px) {
   header .logo {
     flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    top: 10px;
   }
   header .logo img {
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    width: 90px;
-    height: 60px;
     margin-bottom: 4px;
   }
   header .logo .logo__title {
@@ -589,7 +588,6 @@ footer .copy {
   }
   header .logo .logo__title {
     display: block;
-    width: 100%;
     font-weight: 700;
     font-size: 1rem;
     color: rgb(255, 255, 255);
@@ -705,6 +703,9 @@ footer .copy {
   header .menu .menu__list .menu__item .link__active {
     border-bottom: 1px solid rgb(255, 255, 255);
     background-color: transparent;
+  }
+  .bannerIndex {
+    padding-top: 20px;
   }
   .bannerIndex .bannerIndex__txt .max-titulo {
     font-size: 3.8rem;
